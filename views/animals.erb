@@ -1,0 +1,26 @@
+<h1>Currently Available Animals:</h1>
+
+<% if @animals.any?() %>
+
+  <ul>
+    <% @animals.each() do |animal| %>
+    <%= animal.fetch("name") %>
+    <%= animal.fetch("gender") %>
+    <%= animal.fetch("date") %>
+    <%= animal.fetch("type") %>
+    <%= animal.fetch("breed") %>
+        <br>
+    <% end %>
+  </ul>
+
+  <% else %>
+
+  <p>
+    There are no animals available!
+  </p>
+
+  <% end %>
+
+  <a href="/animals/name">See Animals Sorted by Name</a>
+  <a href="/animals/type">See Animals Sorted by Type</a>
+  <a href="/animals/breed">See Animals Sorted by Breed</a>

@@ -1,0 +1,21 @@
+<h1>Customers Sorted by Breed Preference</h1>
+
+<% if @customers.any?() %>
+
+  <ul>
+    <% @customers.each() do |customer| %>
+        <%= customer.fetch("name") %>
+        <%= customer.fetch("phone") %>
+        <%= customer.fetch("type_preference") %>
+        <%= customer.fetch("breed_preference") %>
+        <br>
+    <% end %>
+  </ul>
+
+  <% else %>
+
+  <p>
+    There are no customers!
+  </p>
+
+  <% end %>

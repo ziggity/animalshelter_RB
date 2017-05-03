@@ -1,0 +1,22 @@
+<h1>Current Customers:</h1>
+
+<% if @customers.any?() %>
+
+  <ul>
+    <% @customers.each() do |customer| %>
+        <%= customer.name() %>
+        <%= customer.phone() %>
+        <%= customer.type_preference() %>
+        <%= customer.breed_preference() %>
+        <br>
+    <% end %>
+  </ul>
+
+  <% else %>
+
+  <p>
+    There are no customers!
+  </p>
+
+  <% end %>
+ <a href="/customers/breed">Customers Sorted by Breed Preference</a>

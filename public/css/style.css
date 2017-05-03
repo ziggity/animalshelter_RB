@@ -1,0 +1,9 @@
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZtBNxkcqmuBTjvftqAFiu5WC5oK-V3N4gdSOAaRHvjZBEBXEd);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}

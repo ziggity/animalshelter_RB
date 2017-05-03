@@ -1,0 +1,22 @@
+<h1>Animals by Type:</h1>
+
+ <% if @animals.any?() %>
+
+  <ul>
+    <% @animals.each() do |animal| %>
+        <%= animal.fetch("name") %>
+        <%= animal.fetch("gender") %>
+        <%= animal.fetch("date") %>
+        <%= animal.fetch("type") %>
+        <%= animal.fetch("breed") %>
+        <br>
+    <% end %>
+  </ul>
+
+  <% else %>
+
+  <p>
+    No animals!
+  </p>
+
+  <% end %>
